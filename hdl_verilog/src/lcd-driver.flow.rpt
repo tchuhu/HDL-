@@ -1,0 +1,125 @@
+Flow report for lcd-driver
+Tue Jul 02 23:54:12 2019
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++------------------------------------+------------------------------------------+
+; Flow Status                        ; Successful - Tue Jul 02 23:54:12 2019    ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Full Version ;
+; Revision Name                      ; lcd-driver                               ;
+; Top-level Entity Name              ; lcd_driver                               ;
+; Family                             ; Cyclone II                               ;
+; Device                             ; EP2C70F896C6                             ;
+; Timing Models                      ; Final                                    ;
+; Met timing requirements            ; No                                       ;
+; Total logic elements               ; 346 / 68,416 ( < 1 % )                   ;
+;     Total combinational functions  ; 346 / 68,416 ( < 1 % )                   ;
+;     Dedicated logic registers      ; 84 / 68,416 ( < 1 % )                    ;
+; Total registers                    ; 84                                       ;
+; Total pins                         ; 33 / 622 ( 5 % )                         ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 128 / 1,152,000 ( < 1 % )                ;
+; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                          ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
++------------------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/02/2019 23:53:27 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lcd-driver          ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 31032343620083.156208280717748                         ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; D:/lcd-driver-CFAH1602BTMCJP/src/lcd-driver.dpf        ; --            ; --          ; --             ;
+; MISC_FILE                          ; F:/康老师/lcd-driver-CFAH1602BTMCJP/src/lcd-driver.dpf ; --            ; --          ; --             ;
+; MISC_FILE                          ; G:/康老师/src/lcd-driver.dpf                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/黎棃/Desktop/康老师/src/lcd-driver.dpf        ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                               ; --            ; lcd_driver  ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                                 ; --            ; lcd_driver  ; Top            ;
+; TOP_LEVEL_ENTITY                   ; lcd_driver                                             ; lcd-driver    ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                    ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:07     ; 1.0                     ; 259 MB              ; 00:00:06                           ;
+; Fitter                  ; 00:00:14     ; 1.0                     ; 421 MB              ; 00:00:13                           ;
+; Assembler               ; 00:00:06     ; 1.0                     ; 377 MB              ; 00:00:06                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 209 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:28     ; --                      ; --                  ; 00:00:26                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++-------------------------+------------------+---------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++-------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis    ; LAPTOP-5GO8JJQL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; LAPTOP-5GO8JJQL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; LAPTOP-5GO8JJQL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; LAPTOP-5GO8JJQL  ; Windows Vista ; 6.2        ; x86_64         ;
++-------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lcd-driver -c lcd-driver
+quartus_fit --read_settings_files=off --write_settings_files=off lcd-driver -c lcd-driver
+quartus_asm --read_settings_files=off --write_settings_files=off lcd-driver -c lcd-driver
+quartus_tan --read_settings_files=off --write_settings_files=off lcd-driver -c lcd-driver --timing_analysis_only
+
+
+
